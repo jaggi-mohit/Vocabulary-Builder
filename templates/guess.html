@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess</title>
+    <style>
+    input[type='submit']:hover{
+    background-color:blue;
+    color:white;
+   
+    
+}
+body{
+
+     background-image: url("https://images.unsplash.com/photo-1503494099816-316e7ebbebd4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+ background-size: 100%  110%;
+ background-attachment: fixed;
+}
+input[type='submit']{
+    width:100px;
+    height:40px;
+    
+}
+h2{
+    background-color: aliceblue;
+}
+h3{
+    background-color: yellow;
+    width: 40%;
+}
+h4{
+    background-color: red;
+    width:20%;
+    color:white
+}
+h1{
+    background-color: blue;
+    color:white;
+    width:22%;
+}
+button[type='button']:hover{
+    background-color:blue;
+    color:white;
+    width:100px;
+
+}
+</style>
+</head>
+<body>
+<center><h1><u>Word Guess Game</u></h1></center><br>
+<center><h2>Jumbled Word: {{jum_word}}<h2></center>
+<center><h4><b>{{msg}}</b></h4></center><br>
+<center><h3>Hint:{{msg1}}</h3></center>
+<center><h4>{{msg2}}</h4></center>
+<form method="GET" action="checkans">
+<center><input type="text" name="answer" placeholder="Enter Your Answer" ></center><br>
+ <center><input type="submit" ><center>
+ </form>
+ <br>
+ 
+ <div class ="wrap">
+    <a  href="http://127.0.0.1:8000/"><button type="button" class="btn btn-primary btn-lg" ><align="center">🏠Home</align></button></a>
+</div>
+
+</body>
+</html>
